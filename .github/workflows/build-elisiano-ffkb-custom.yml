@@ -1,0 +1,13 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: "Build Elisiano corne-ish_zen custom"
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["ffkb"]'
+      kconfig: ''
+      branches: '["caksoylar/zmk/caksoylar/zen-unified zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
