@@ -9,5 +9,4 @@ jobs:
     secrets: inherit
     with:
       board: '["ffkb"]'
-      kconfig: '[]'
       branches: '["caksoylar/zmk/caksoylar/zen-unified zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
