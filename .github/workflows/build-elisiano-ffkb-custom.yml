@@ -1,12 +1,15 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: "Build Elisiano ffkb"
+name: 'Build Elisiano FFKB Custom'
 on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["ffkb"]'
-      branches: '["caksoylar/zmk/caksoylar/zen-unified zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+      board: '["nice_nano_v2"]'
+      shield: '["ffkb"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
