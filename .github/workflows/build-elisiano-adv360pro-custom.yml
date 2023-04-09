@@ -1,0 +1,14 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Elisiano Advantage 360 Pro Custom'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["adv360pro_left", "adv360pro_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["manna-harbour/zmk/zephyr-3.0 zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
