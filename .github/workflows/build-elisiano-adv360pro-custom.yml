@@ -9,7 +9,6 @@ jobs:
     secrets: inherit
     with:
       board: '["adv360pro_left", "adv360pro_right"]'
-      #custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      #kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-      #branches: '["manna-harbour/zmk/zephyr-3.0 zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-      branches: '["manna-harbour/zmk/zephyr-3.0"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["manna-harbour/zmk/zephyr-3.0 ftc/zmk/mouse-ftc"]'
