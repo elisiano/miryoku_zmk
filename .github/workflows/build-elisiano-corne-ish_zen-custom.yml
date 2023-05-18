@@ -11,4 +11,4 @@ jobs:
       board: '["corneish_zen_v2_left","corneish_zen_v2_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y"]'
-      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+      branches: '["zmkfirmware/zmk/main urob/zmk/mouse-3.2"]'
